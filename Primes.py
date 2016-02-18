@@ -22,4 +22,4 @@ def arecoprime (a,b):
 	else:
 		return 0 
 
-print arecoprime (12,10)
+print arecoprime (14,3)
