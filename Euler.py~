@@ -1,0 +1,28 @@
+#Febrero 23 de 2016
+#Codigo para nuevas F
+
+import numpy
+import matplotlib
+import matplotlib.pyplot
+
+def fg (t,r):
+	return -r*t
+
+def ff (z, delta, r):
+	return z+delta*fg(z,r)
+
+y0= 0.1
+delta= 0.01
+r= 2.0
+u= ff(y0,delta,r)
+print u
+
+
+n=100
+t= range(n)
+y= range(n)
+
+for i in range(n):
+	y1=ff(y0,delta,r)
+	y0=y1	
+	y[i]= u1
