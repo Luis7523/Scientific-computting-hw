@@ -29,12 +29,10 @@ print y
 
 Xnew = numpy.array(x)
 Ynew = numpy.array(y)
-Tnew = numpy.array(t)
 print Xnew
 print Ynew
-print Tnew
 
-matplotlib.pyplot.plot(Tnew,Xnew)
-matplotlib.pyplot.plot(Tnew,Ynew)
+matplotlib.pyplot.plot(
+matplotlib.pyplot.plot(Ynew,Xnew)
 matplotlib.pyplot.show()
 
