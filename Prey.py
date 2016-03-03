@@ -17,7 +17,7 @@ y = range(101)
 x = range(101)
 t = range(101)   
 for i in range(101):
-	x1 = (delta * Kyx * y0 * x0) - (delta * Kx) + x0
+	x1 = (delta * Kyx * y0 * x0) - (delta * Kx * x0) + x0
 	x0 = x1
 	x[i] = x1
 	y1 = (delta * Ky * y0) - (delta * Kxy * x0 * y0) + y0 
@@ -29,12 +29,12 @@ print y
 
 Xnew = numpy.array(x)
 Ynew = numpy.array(y)
-Tnew = numpy.array(t)
+
 print Xnew
 print Ynew
-print Tnew
 
-matplotlib.pyplot.plot(Tnew,Xnew)
-matplotlib.pyplot.plot(Tnew,Ynew)
+
+matplotlib.pyplot.plot(Ynew,Xnew)
+matplotlib.pyplot.plot(Xnew,Ynew)
 matplotlib.pyplot.show()
 
