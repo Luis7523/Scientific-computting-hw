@@ -8,16 +8,16 @@ import matplotlib.pyplot
 sigma = 10
 rho = 28
 beta = 2.667
-x = range(10001)
-y = range(10001)
-z = range(10001)
-t = range(10001)
+x = range(1001)
+y = range(1001)
+z = range(1001)
+t = range(1001)
 x0 = 0
 y0 = 1
 z0 = 1.05
 delta = 0.01
 
-for i in range(10001):
+for i in range(1001):
 	x1 = (delta * sigma * y0) - (delta * sigma * x0) + x0
 	x0 = x1
 	x[i] = x1
@@ -42,7 +42,7 @@ print Ynew
 print Znew 
 print Tnew
 
-matplotlib.pyplot.plot(Xnew,Tnew)
+matplotlib.pyplot.plot(Xnew,Znew)
 matplotlib.pyplot.show()
 
 
