@@ -20,9 +20,11 @@ for i in range(101):
 	Y1 = Y0 + delta * f(Y0 + 1/2 * delta * f(Y0)) 
 	Y0 = Y1	
 	Y[i] = Y1
+	t[i] = i * delta
+
 print Y
 Ynew=numpy.array(Y)
-tnew=numpy.array(t) * delta
+tnew=numpy.array(t)
 print Ynew
 print tnew
 

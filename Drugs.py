@@ -4,7 +4,7 @@
 
 
 
-import numpy
+import numpy as np
 import matplotlib
 import matplotlib.pyplot
 
@@ -12,14 +12,16 @@ delta = 0.1
 k = 0.2
 t = range(101)
 Q = range(101)
+
 Q0=200
 for i in range(101):
 	Q1 = Q0-delta*k*Q0
 	Q0 = Q1	
 	Q[i] = Q1
+	t[i] = i * delta
 print Q
-Qnew=numpy.array(Q)
-tnew=numpy.array(t)*6
+Qnew=np.array(Q)
+tnew=np.array(t)
 print Qnew
 print tnew
 

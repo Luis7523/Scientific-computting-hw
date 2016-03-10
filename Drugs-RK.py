@@ -21,7 +21,7 @@ for i in range(101):
 	Y0 = Y1	
 	Y[i] = Y1
 	t[i] = i * delta
-
+#No es necesario imprimir los valores (a menos que sea requerido). 
 print Y
 Ynew=numpy.array(Y)
 tnew=numpy.array(t)
